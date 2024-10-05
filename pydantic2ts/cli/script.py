@@ -122,6 +122,8 @@ def extract_enum_models(module: ModuleType) -> List[Type[Enum]]:
     """
     Given a module, return a list of the Enum classes contained within it.
     """
+    print(module.__name__)
+    print(dir(module))
     enums = []
     module_name = module.__name__
 
